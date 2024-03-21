@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="map.lab11.controller.MessageController">
+   <children>
+      <TableView fx:id="fromUserTableView" layoutX="14.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
+        <columns>
+            <TableColumn fx:id="fromIdUser" prefWidth="100.0" text="ID" />
+            <TableColumn fx:id="fromFirstName" prefWidth="100.0" text="Prenume" />
+            <TableColumn fx:id="fromLastName" prefWidth="100.0" text="Nume" />
+        </columns>
+      </TableView>
+      <TableView fx:id="toUserTableView" layoutX="486.0" layoutY="100.0" prefHeight="200.0" prefWidth="300.0">
+        <columns>
+            <TableColumn fx:id="toIdUser" prefWidth="100.0" text="ID" />
+            <TableColumn fx:id="toFirstName" prefWidth="100.0" text="Prenume" />
+            <TableColumn fx:id="toLastName" prefWidth="100.0" text="Nume" />
+        </columns>
+      </TableView>
+      <Button layoutX="349.0" layoutY="100.0" mnemonicParsing="false" onAction="#clickVeziConversatie" text="Vezi conversatia" />
+      <Button layoutX="451.0" layoutY="330.0" mnemonicParsing="false" onAction="#clickTrimite" text="Trimite" />
+      <TextField fx:id="text" layoutX="301.0" layoutY="330.0" promptText="Scrie..." />
+      <Label layoutX="150.0" layoutY="65.0" text="De la" />
+      <Label layoutX="622.0" layoutY="65.0" text="Catre" />
+      <!--<Button layoutX="14.0" layoutY="74.0" mnemonicParsing="false" text="Anterior" />
+      <Button layoutX="253.0" layoutY="74.0" mnemonicParsing="false" text="Urmator" />
+      <Button layoutX="486.0" layoutY="74.0" mnemonicParsing="false" text="Anterior" />
+      <Button layoutX="725.0" layoutY="74.0" mnemonicParsing="false" text="Urmator" />-->
+   </children>
+</AnchorPane>

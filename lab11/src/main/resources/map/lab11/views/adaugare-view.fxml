@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="244.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="map.lab11.controller.AdaugareUtilizatorController">
+    <children>
+        <Label layoutX="89.0" layoutY="90.0" text="Prenume:" />
+        <Label layoutX="89.0" layoutY="146.0" text="Nume:" />
+        <Label layoutX="141.0" layoutY="43.0" text="ADAUGARE UTILIZATOR" />
+        <TextField fx:id="prenume" layoutX="162.0" layoutY="86.0" />
+        <TextField fx:id="nume" layoutX="163.0" layoutY="142.0" />
+        <Button layoutX="172.0" layoutY="194.0" mnemonicParsing="false" onAction="#clickAdaugare" text="Adaugare" />
+    </children>
+</AnchorPane>

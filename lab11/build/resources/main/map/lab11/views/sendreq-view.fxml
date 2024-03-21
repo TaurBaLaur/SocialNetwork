@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="map.lab11.controller.TrimiteCerereController"
+            prefHeight="244.0" prefWidth="412.0">
+    <Label layoutX="89.0" layoutY="90.0" text="De la:" />
+    <Label layoutX="89.0" layoutY="146.0" text="Catre:" />
+    <Label layoutX="141.0" layoutY="43.0" text="TRIMITE CERERE" />
+    <TextField fx:id="idFrom" layoutX="162.0" layoutY="86.0" />
+    <TextField fx:id="idTo" layoutX="163.0" layoutY="142.0" />
+    <Button layoutX="172.0" layoutY="194.0" mnemonicParsing="false" onAction="#clickTrimiteCerere" text="Trimite" />
+
+</AnchorPane>

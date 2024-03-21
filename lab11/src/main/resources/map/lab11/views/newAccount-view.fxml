@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="map.lab11.controller.NewAccountController">
+   <children>
+      <Button fx:id="creare" layoutX="261.0" layoutY="338.0" mnemonicParsing="false" onAction="#onClickCreare" text="Creare cont" />
+      <Label layoutX="249.0" layoutY="39.0" text="Creare cont">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="149.0" layoutY="103.0" text="Prenume" />
+      <Label layoutX="157.0" layoutY="150.0" text="Nume" />
+      <Label layoutX="151.0" layoutY="191.0" text="Username" />
+      <Label layoutX="156.0" layoutY="230.0" text="Parola" />
+      <TextField fx:id="prenume" layoutX="264.0" layoutY="99.0" />
+      <TextField fx:id="nume" layoutX="264.0" layoutY="146.0" />
+      <TextField fx:id="username" layoutX="264.0" layoutY="188.0" />
+      <TextField fx:id="password" layoutX="265.0" layoutY="226.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="map.lab11.controller.UtilizatorController">
+    <children>
+        <TableView fx:id="userTableView" layoutX="14.0" layoutY="68.0" prefHeight="252.0" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="idUser" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="firstName" prefWidth="100.0" text="Prenume" />
+                <TableColumn fx:id="lastName" prefWidth="100.0" text="Nume" />
+            </columns>
+        </TableView>
+        <Button layoutX="204.0" layoutY="334.0" mnemonicParsing="false" onAction="#onPressDelete" text="Stergere utilizator" />
+        <Button layoutX="14.0" layoutY="334.0" mnemonicParsing="false" onAction="#onPressAdd" prefHeight="26.0" prefWidth="107.0" text="Adauga utilizator" />
+        <Button layoutX="14.0" layoutY="372.0" mnemonicParsing="false" onAction="#onPressUpdate" text="Actualizare utilizator" />
+
+        <TableView fx:id="friendsTableView" layoutX="330.0" layoutY="68.0" prefHeight="252.0" prefWidth="300.0">
+            <columns>
+                <TableColumn fx:id="idU1" prefWidth="75.0" text="User1" />
+                <TableColumn fx:id="idU2" prefWidth="75.0" text="User2" />
+                <TableColumn fx:id="dataF" prefWidth="150.0" text="FriendsFrom" />
+            </columns>
+        </TableView>
+      <TableView fx:id="requestsTableView" layoutX="639.0" layoutY="68.0" prefHeight="252.0" prefWidth="225.0">
+        <columns>
+          <TableColumn fx:id="u1" prefWidth="75.0" text="User1" />
+          <TableColumn fx:id="u2" prefWidth="75.0" text="User2" />
+            <TableColumn fx:id="status" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="378.0" layoutY="334.0" mnemonicParsing="false" onAction="#onPressSendRequest" text="Trimite cerere" />
+      <Button layoutX="639.0" layoutY="334.0" mnemonicParsing="false" onAction="#onPressAccept" text="Accepta cerere" />
+      <Button layoutX="764.0" layoutY="334.0" mnemonicParsing="false" onAction="#onPressDecline" text="Respinge cerere" />
+      <Button layoutX="494.0" layoutY="334.0" mnemonicParsing="false" onAction="#onPressDeleteFriendship" text="Sterge prietenie" />
+      <Button layoutX="216.0" layoutY="372.0" mnemonicParsing="false" onAction="#onPressMessages" text="Trimitere mesaj" />
+      <Button fx:id="previousButtonUsers" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#onPreviousUsers" text="Anterior" />
+      <Button fx:id="nextButtonUsers" layoutX="253.0" layoutY="43.0" mnemonicParsing="false" onAction="#onNextUsers" text="Urmator" />
+      <Button fx:id="previousButtonFriendships" layoutX="330.0" layoutY="43.0" mnemonicParsing="false" onAction="#onPreviousFriendships" text="Anterior" />
+      <Button fx:id="nextButtonFriendships" layoutX="569.0" layoutY="43.0" mnemonicParsing="false" onAction="#onNextFriendships" text="Urmator" />
+      <Button fx:id="previousButtonRequests" layoutX="639.0" layoutY="43.0" mnemonicParsing="false" onAction="#onPreviousRequests" text="Anterior" />
+      <Button fx:id="nextButtonRequests" layoutX="804.0" layoutY="43.0" mnemonicParsing="false" onAction="#onNextRequests" text="Urmator" />
+    </children>
+</AnchorPane>
